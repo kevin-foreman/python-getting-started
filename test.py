@@ -39,3 +39,13 @@ if __name__ == '__main__':
     
     pounds = kilo_to_pounds(kilos)
     print(f'{pounds:.3f} lbs')
+    
+# Convert user input laps to miles on pre-defined course length
+def laps_to_miles(user_laps):
+    num_miles = user_laps * 0.25
+    return num_miles
+
+if __name__ == '__main__':
+    user_laps = float(input());
+    num_miles = laps_to_miles(user_laps)
+    print(f'{num_miles:.2f}')
